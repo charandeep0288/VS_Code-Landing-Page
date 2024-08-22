@@ -1,0 +1,246 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #0e0e0e;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: #0e0e0e;
+  border-bottom: 1px solid #2b2b2b;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0 6px 0 6px;
+  background-color: rgb(0 0 0 / 0%);
+  border: none;
+}
+
+div#main {
+  background-color: #0e0e0e;
+  color: white;
+  width: 100%;
+  min-height: 100%;
+}
+
+.navbar-container,
+.navbar-header,
+.navbar-brand,
+.navbar-collapse,
+ul,
+.navbar-right,
+.input-group {
+  display: flex;
+}
+
+.navbar-container {
+  justify-content: space-between;
+  padding: 0.1% 14%;
+}
+
+.navbar-brand,
+.navbar-right {
+  align-items: center;
+}
+
+.navbar-brand .navbar-title {
+  padding-left: 12px;
+  font-weight: 600;
+  font-size: 20;
+  color: white;
+}
+
+.navbar-collapse ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar-collapse ul li {
+  padding-left: 8%;
+}
+
+.navbar-collapse ul li a {
+  color: #9ba3b4;
+  font-weight: 500;
+}
+
+.navbar-collapse ul li a:hover {
+  color: white;
+}
+
+.navbar-right .search-icon-light {
+  display: none;
+}
+
+.input-group {
+  align-items: center;
+}
+
+.navbar-right .input-group-btn {
+  position: relative;
+  left: -58%;
+  z-index: 2;
+  top: 3px;
+}
+
+.nav .navbar-right #theme-toggle {
+  background-color: rgb(0 0 0 / 0%);
+  height: fit-content;
+  border: none;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.nav .navbar-right #theme-toggle:hover {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+.theme-icon-dark {
+  display: none;
+}
+
+.nav .navbar-right .input-group .search-box {
+  background: #00000000;
+  border: 1px solid rgb(255 255 255 / 15%);
+  padding: 5px 12px 5px 36px;
+  border-radius: 4px;
+  color: #9ba3b4;
+  transition: opacity 0.08s ease-in;
+  height: 33px;
+}
+
+.nav .navbar-right .input-group .search-box:focus {
+  opacity: 1;
+  border-color: #0078d4;
+  box-shadow: none;
+  outline: none;
+}
+
+.nav .navbar-right .input-group .link-button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #0078d4;
+  top: -1px;
+  position: relative;
+}
+
+.nav .navbar-right .input-group .link-button:hover {
+  background-color: #0566b1;
+}
+
+.updates-banner {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.updates-banner .message a {
+  margin: 8px 0;
+  color: #4daafc;
+}
+
+.updates-banner .message {
+  color: #9ba3b4;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#main-content {
+  display: flex;
+  justify-content: center;
+}
+
+#main-content .hero-content {
+  margin-bottom: 96px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1320px;
+}
+
+.hero-content .hero-image.dark {
+  width: 100%;
+}
+
+.hero-content .hero-image.light {
+  display: none;
+}
+.hero-text {
+  width: 33.33333333%;
+}
+
+.hero-content .hero-text .hero-tag {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 12px;
+  border-radius: 32px;
+  background-color: rgb(255 255 255 / 4%);
+  border: 1px solid rgb(255 255 255 / 7%);
+  color: #9ba3b4;
+}
+
+.hero-content .hero-text h1 {
+  font-size: 56px;
+  color: #e9eaeb;
+}
+
+.hero-content #download-buttons-win {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: #0078d4;
+  position: relative;
+  text-decoration: none;
+}
+.hero-content #download-buttons-win:hover {
+    background-color: #0566b1;
+}
+
+.hero-content .hero-text #download-matrix-label, .hero-content .hero-text .subtext.terms {
+    color: #9ba3b4;
+    font-weight: 500;
+}
+
+.hero-content .hero-text #download-matrix-label {
+  margin: 22 0px;
+}
+
+.hero-content .hero-text #download-matrix-label a, .hero-content .hero-text .subtext.terms a {
+    color: #4daafc;
+    font-weight: 500;
+}
+
+.hero-content .hero-text #download-matrix-label a {
+  font-size: 14px;
+  margin: 16px 0 8px 0;
+}
+
+.hero-content .hero-text .subtext.terms {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+}
